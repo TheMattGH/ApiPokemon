@@ -1,0 +1,273 @@
+{
+	"info": {
+		"_postman_id": "069c45e9-b48b-4af9-b5ec-f9ea230530de",
+		"name": "ExamenFinal-Spring",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22304684"
+	},
+	"item": [
+		{
+			"name": "ListarCliente",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/Cliente/Listar",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Cliente",
+						"Listar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ListarLogin",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/Login/Listar",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Login",
+						"Listar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AsignarPokemon",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/Pokemon/Asignar",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Pokemon",
+						"Asignar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ListarPokemon",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/Pokemon/Listar",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Pokemon",
+						"Listar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LimpiarPokemon",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/Pokemon/Eliminar",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Pokemon",
+						"Eliminar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RegistarCliente",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\t\r\n\"identificacion\":\"0751001942\",\r\n\"nombreCompleto\":\"David Chicaiza\",\r\n\"telefono\":\"0983399927\",\r\n\"correo\":\"@gmailcom\",\r\n\"fechaNacimiento\":\"16-09-2001\",\r\n\"usuario\":\"Rivs\",\r\n\"pass\":\"pass\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/Cliente/Registrar",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Cliente",
+						"Registrar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RegistrarClienteSinLogin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"tipoIdentificacion\":1,\r\n\t\"identificacion\":\"0105222214\",\r\n\t\"apellidoPaterno\":\"Palacios\",\r\n\t\"apellidoMaterno\":\"Astudillo\",\r\n\t\"nombre1\":\"Mateo\",\r\n\t\"nombre2\":\"Pablo\",\r\n\t\"telefono\":\"0985544667\",\r\n\t\"correo\":\"maeto@gmail.com\",\r\n\t\"fechaNacimiento\":\"05-05-2001\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/Cliente/RegistrarSinLogin",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Cliente",
+						"RegistrarSinLogin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CrearLogin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"user\":\"OOO\",\r\n\t\"pass\":\"1234\",\r\n\t\"cliente\": 6\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/Login/CrearLogin",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Login",
+						"CrearLogin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EliminarCliente",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"idCliente\":3\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/Cliente/Eliminar",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Cliente",
+						"Eliminar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ActivarLogin",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"idLogin\":3\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/Login/Activar",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Login",
+						"Activar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DesactivarLogin",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"idLogin\":3\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/Login/Desactivar",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Login",
+						"Desactivar"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
